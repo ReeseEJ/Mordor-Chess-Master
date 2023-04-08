@@ -29,8 +29,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8261295593743798244}
-  - {fileID: 8261295595226701492}
-  - {fileID: 8261295595571820564}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65,6 +63,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8261295594559533193}
+  - {fileID: 8261295595226701492}
+  - {fileID: 8261295595571820564}
   m_Father: {fileID: 3549146024465037461}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -343,12 +343,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8261295595226701498}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9097052, y: 1.5676823, z: -0.23410678}
+  m_LocalPosition: {x: 0.3385644, y: -0.13370585, z: -0.06870985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8296420914409920094}
-  m_Father: {fileID: 3549146024465037461}
+  m_Father: {fileID: 8261295593743798244}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8261295595226701499
@@ -567,12 +567,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8261295595571820570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9097052, y: 1.5676823, z: -0.23410678}
+  m_LocalPosition: {x: 0.3385644, y: -0.13370585, z: -0.06870985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4345745479317467682}
-  m_Father: {fileID: 3549146024465037461}
+  m_Father: {fileID: 8261295593743798244}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8261295595571820571
@@ -872,6 +872,19 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+  gripAnimationAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  handAnimator: {fileID: 0}
 --- !u!1001 &8261295594388259363
 PrefabInstance:
   m_ObjectHideFlags: 0
