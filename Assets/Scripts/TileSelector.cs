@@ -48,6 +48,7 @@ public class TileSelector : MonoBehaviour
 
     void Update ()
     {
+        //Debug.Log("Tileselector: update");
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
@@ -71,7 +72,15 @@ public class TileSelector : MonoBehaviour
         }
         else
         {
-            tileHighlight.SetActive(false);
+            /* pdave ALL AI! */
+            //Debug.Log("No raycast tile!");
+            //tileHighlight.SetActive(false);
+            Vector2Int gridPoint = Geometry.GridPoint(1, 1);
+
+            GameObject selectedPiece = GameManager.instance.PieceAtGrid(gridPoint);
+            ExitState(selectedPiece);
+            /* ALL AI! */
+
         }
     }
 
